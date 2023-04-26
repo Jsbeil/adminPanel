@@ -2,6 +2,7 @@
 function closeBg(){
     let bGpopup = document.getElementById("bg-popup");
     bGpopup.classList.add('disable');
+    deletClassNone();
 }
 function openBg(){
     let container = document.getElementById("container-gl");
@@ -14,3 +15,11 @@ function closePopup(){
     setTimeout(openBg,1000);
 }
 
+function openPopupCreate(){
+    let createpopup = document.getElementById("createpopup");
+    createpopup.classList.toggle('active');
+}
+function closePopupCreate(){
+    let removecreatepopup = document.getElementById("createpopup");
+    removecreatepopup.classList.remove('active');
+}

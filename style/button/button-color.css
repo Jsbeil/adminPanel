@@ -29,3 +29,8 @@
      background-color: rgb(252, 255, 52);
      transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
+
+
+.change-color.none{
+    display: none;
+}

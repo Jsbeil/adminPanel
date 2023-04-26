@@ -27,10 +27,10 @@
 
 .popup-info{
     width: 400px;
-    height: 65px;
+    height: 82px;
 
     font-weight: 900;
-    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .close{

@@ -6,9 +6,11 @@
         <link rel="stylesheet" type="text/css" href="style/input/input.css">
         <link rel="stylesheet" type="text/css" href="style/popup/popup.css">
         <link rel="stylesheet" type="text/css" href="style/button/button-color.css">
+        <link rel="stylesheet" type="text/css" href="style/create-menu.css">
 
         <script src="style/popup/popup.js"></script>
         <script src="style/button/button.js"></script>
+        <script scr="script.js"></script>
         <script src="https://kit.fontawesome.com/3cbd357e36.js" crossorigin="anonymous"></script>
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -26,13 +28,24 @@
                     </div>
                 </div>
             </div>
-            <div class="change-color">
+            <div class="change-color none" id="changeColor">
                 <div class="button-chanhe">
                     <div class="circle" id="circle" onclick="AddClassCircle()"></div>
                 </div>
             </div>
             <div class="container-gl" id="container-gl">
-                   
+                    <div class="create-menu-button">
+                        <div class="create-text" >Нажмите на кнопку чтоб создать свое меню</div>
+                        <button class="button-style-easy create-button" onclick="openPopupCreate()">Открыть</button>
+                    </div>
+                    <div class="create-popup" id="createpopup">
+                        <input class="input-style-easy create-input" placeholder="Меню вводить через запятую"/>
+                        <div class="create-buttons">
+                            <i class="fa-solid fa-x close" id="closeButton" onclick="closePopupCreate()" style="color: gray;"></i>
+                            <button class="button-style-easy create-button-menu" style="margin-top: 10px;">СОЗДАТЬ</button>
+                            <button class="button-style-easy create-button-menu" style="margin-left: 10px;">ВЫБРАТЬ ЦВЕТ</button>
+                        </div>
+                    </div>
             </div>
     </body>
 </html>

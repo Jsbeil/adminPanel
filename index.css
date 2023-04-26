@@ -6,6 +6,10 @@ body.active{
     background-color: rgb(79, 122, 122);
 
 }
+h3{
+    font-weight: 900;
+    text-transform: uppercase;
+}
 
 .container-gl{
     position: absolute;
