@@ -7,7 +7,7 @@ body{
     width: 75%;
     height: 100vh;
     
-    background-color: white;
+    background-color: rgb(255, 255, 255);
    
     pointer-events: none;
     
@@ -16,7 +16,7 @@ body{
     border-radius: 10px;
     
     transition: 0.5s all;
-    top: 57%;
+    top: 59%;
     left: 50%;
     box-shadow: -1px 23px 24px 1px rgba(34, 60, 80, 0.45);
 
