@@ -1,3 +1,30 @@
 body{
     background-color: rgb(134, 224, 224);
 }
+
+.container-gl{
+    position: absolute;
+    width: 75%;
+    height: 100vh;
+    
+    background-color: white;
+   
+    pointer-events: none;
+    
+    opacity: 0;
+    
+    border-radius: 10px;
+    
+    transition: 0.5s all;
+    top: 57%;
+    left: 50%;
+    box-shadow: -1px 23px 24px 1px rgba(34, 60, 80, 0.45);
+
+    transform:translate(-50%, -50%);
+}
+.container-gl.active{
+    transition: 0.5s opacity;
+    pointer-events: all;
+    opacity: 1;
+  
+}

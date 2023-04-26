@@ -42,3 +42,8 @@
 .disable{
     display: none;
 }
+
+.openContainer{
+    opacity: 1;
+    pointer-events: all;
+}
