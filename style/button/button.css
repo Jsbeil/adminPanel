@@ -1,0 +1,20 @@
+.button-style-easy{
+    border: none;
+    border-radius: 9px;
+    background-color: rgb(123, 162, 255);
+    
+    color: rgb(255, 255, 255);
+    
+    font-weight: 900;
+    text-transform: uppercase;
+
+    box-shadow: 3px 5px 0px 0px rgb(42, 72, 94);   
+    transition:  background-color 1s linear;
+    transition:  box-shadow 0.2s linear;
+}
+
+.button-style-easy:active{
+    background-color: rgb(107, 146, 235);
+    box-shadow: none;
+    transform: translate(0, 0.25em);
+}
