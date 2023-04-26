@@ -4,10 +4,25 @@
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="style/button/button.css">
         <link rel="stylesheet" type="text/css" href="style/input/input.css">
+        <link rel="stylesheet" type="text/css" href="style/popup/popup.css">
+
+        <script src="style/popup/popup.js"></script>
+        <script src="https://kit.fontawesome.com/3cbd357e36.js" crossorigin="anonymous"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Пример веб-страницы</title>
+        
     </head>
     <body>
-            <button class="button-style-easy" style="width: 300px; height: 41px;">СОЗДАТЬ</button>
-            <input value="" placeholder="Введите текс" class="input-style-easy" style="width: 300px; height: 41px; margin-left: 30px;"/>
-
+            <div class="popup-bg" id="bg-popup">
+                <div class="popup active" id="popupActive" >
+                    <i class="fa-solid fa-x close" id="closeButton" onclick="closePopup()"></i>
+                    <div class="popup-info">
+                            Это придложение будет,предоставлять возможность,
+                            Создавать меню сайта. Если вы все прочитали и 
+                            ознакомились с этим, можно нажать на крестик.
+                    </div>
+                </div>
+            </div>
     </body>
 </html>
