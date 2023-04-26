@@ -1,5 +1,10 @@
 body{
     background-color: rgb(134, 224, 224);
+    transition: background-color 1s linear;
+}
+body.active{
+    background-color: rgb(79, 122, 122);
+
 }
 
 .container-gl{
