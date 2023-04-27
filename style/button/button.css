@@ -1,7 +1,7 @@
 .button-style-easy{
     border: none;
     border-radius: 9px;
-    background-color: rgb(123, 162, 255);
+    background-color: hsl(222, 100%, 74%);
     
     color: rgb(255, 255, 255);
     
@@ -22,7 +22,7 @@
 
 
 .button-array{
-    width: 100px;
+    
     height: 40px;
     margin-left: 10px;
 }
@@ -35,4 +35,23 @@
 }
 .button-array.hover:hover{
    color: red;
+}
+
+.color-input{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border:1px solid gray;
+
+    
+    box-shadow: 3px 5px 0px 0px rgb(42, 72, 94);   
+    transition:  background-color 1s linear;
+    transition:  box-shadow 0.2s linear;
+}
+
+.color-input:active{
+    background-color: rgb(107, 146, 235);
+    box-shadow: none;
+    transform: translate(0, 0.25em);
 }
