@@ -18,7 +18,7 @@
         
     </head>
     <body id="body">
-            <div class="popup-bg" id="bg-popup">
+            <!-- <div class="popup-bg" id="bg-popup">
                 <div class="popup active" id="popupActive" >
                     <i class="fa-solid fa-x close" id="closeButton" onclick="closePopup()"></i>
                     <div class="popup-info">
@@ -28,22 +28,36 @@
                     </div>
                 </div>
             </div>
-            <div class="change-color none" id="changeColor">
+            <div class="change-color none" id="changeColor"> -->
                 <div class="button-chanhe">
                     <div class="circle" id="circle" onclick="AddClassCircle()"></div>
                 </div>
             </div>
-            <div class="container-gl" id="container-gl">
+            <div class="container-gl active" id="container-gl">
                     <div class="create-menu-button">
                         <div class="create-text" >Нажмите на кнопку чтоб создать свое меню</div>
                         <button class="button-style-easy create-button" onclick="openPopupCreate()">Открыть</button>
                     </div>
-                    <div class="create-popup" id="createpopup">
+                    <div class="create-popup active" id="createpopup">
                         <input class="input-style-easy create-input" placeholder="Меню вводить через запятую"/>
                         <div class="create-buttons">
                             <i class="fa-solid fa-x close" id="closeButton" onclick="closePopupCreate()" style="color: gray;"></i>
                             <button class="button-style-easy create-button-menu" style="margin-top: 10px;">СОЗДАТЬ</button>
-                            <button class="button-style-easy create-button-menu" style="margin-left: 10px;">ВЫБРАТЬ ЦВЕТ</button>
+                            <button class="button-style-easy create-button-menu"onclick="selectionColorOpen()" style="margin-left: 10px;">ВЫБРАТЬ ЦВЕТ</button>
+                        </div>
+                        <div class="color-selection none" id="selection-color">
+                            <div class="element-color-selection">
+                                <div class="element-text">Цвет текста</div>
+                                <button class="button-style-easy button-color-selection"></button>
+                            </div>
+                            <div class="element-color-selection">
+                                <div class="element-text">Цвет Фона</div>
+                                <button class="button-style-easy button-color-selection"></button>
+                            </div>
+                            <div class="element-color-selection">
+                                <div class="element-text">Цвет hover</div>
+                                <button class="button-style-easy button-color-selection"></button>
+                            </div> 
                         </div>
                     </div>
             </div>

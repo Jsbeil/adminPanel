@@ -23,3 +23,11 @@ function closePopupCreate(){
     let removecreatepopup = document.getElementById("createpopup");
     removecreatepopup.classList.remove('active');
 }
+function selectionColorOpen(){
+    let selectioncolor = document.getElementById("createpopup");
+    selectioncolor.classList.toggle('open');
+    setTimeout(function(){
+        let selectionColor = document.getElementById("selection-color");
+        selectionColor.classList.toggle("none");
+    },100)
+}

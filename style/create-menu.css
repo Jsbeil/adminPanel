@@ -22,15 +22,24 @@
         transform: translate(-50%, -50%) scale(0);
         background: #f0f0f0;
         width: 400px;
+        height: 60px;
         padding: 25px;
         transition: 0.5s all;
         border-radius: 4px;
+       
 }
 
 .create-popup.active{
     transform: translate(-50%, -50%) scale(1);
     transition: 0.5s all;
     box-shadow: 3px 5px 0px 0.6px rgb(42, 72, 94); 
+}
+.create-popup.open{
+    height: 130px;
+    transition: height 0.5s linear;
+}
+.color-selection.none{
+    display: none;
 }
 
 .create-input{
@@ -45,4 +54,23 @@
 
 .create-buttons{
     display: flex;
+}
+
+.color-selection{
+    margin-top: 30px;
+    display: flex;
+    op
+}
+.element-color-selection{
+    display: flex;
+    margin-left: 10px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    color: gray;
+}
+.button-color-selection{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
 }
