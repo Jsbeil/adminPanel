@@ -26,3 +26,13 @@
     height: 40px;
     margin-left: 10px;
 }
+
+.button-array.color{
+    color: red;
+}
+.button-array.bgcolor{
+    background-color: red;
+}
+.button-array.hover:hover{
+   color: red;
+}
