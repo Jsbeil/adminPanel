@@ -31,12 +31,11 @@
 
 .create-popup.active{
     transform: translate(-50%, -50%) scale(1);
-    transition: 0.5s all;
+    transition: 0.3s all;
     box-shadow: 3px 5px 0px 0.6px rgb(42, 72, 94); 
 }
 .create-popup.open{
     height: 130px;
-    transition: height 0.5s linear;
 }
 .color-selection.none{
     display: none;
@@ -59,7 +58,6 @@
 .color-selection{
     margin-top: 30px;
     display: flex;
-    op
 }
 .element-color-selection{
     display: flex;

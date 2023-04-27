@@ -11,6 +11,7 @@
         <script src="style/popup/popup.js"></script>
         <script src="style/button/button.js"></script>
         <script scr="script.js"></script>
+        <script src="scripts/menu-creaetion.js"></script>
         <script src="https://kit.fontawesome.com/3cbd357e36.js" crossorigin="anonymous"></script>
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -38,13 +39,19 @@
                         <div class="create-text" >Нажмите на кнопку чтоб создать свое меню</div>
                         <button class="button-style-easy create-button" onclick="openPopupCreate()">Открыть</button>
                     </div>
-                    <div class="create-popup active" id="createpopup">
-                        <input class="input-style-easy create-input" placeholder="Меню вводить через запятую"/>
-                        <div class="create-buttons">
-                            <i class="fa-solid fa-x close" id="closeButton" onclick="closePopupCreate()" style="color: gray;"></i>
-                            <button class="button-style-easy create-button-menu" style="margin-top: 10px;">СОЗДАТЬ</button>
-                            <button class="button-style-easy create-button-menu"onclick="selectionColorOpen()" style="margin-left: 10px;">ВЫБРАТЬ ЦВЕТ</button>
-                        </div>
+                    <div class="create-popup active"  id="createpopup" name="form">
+                            <input 
+                            class="input-style-easy create-input" 
+                            placeholder="Меню вводить через запятую"
+                            onclick="return false"
+                            value=""
+                            id="input-field"
+                            />
+                            <div class="create-buttons">
+                                <i class="fa-solid fa-x close" id="closeButton" onclick="closePopupCreate()" style="color: gray;"></i>
+                                    <button class="button-style-easy create-button-menu"onclick="createArray(); return false;" style="margin-top: 10px;">СОЗДАТЬ</button>
+                                <button class="button-style-easy create-button-menu"onclick="selectionColorOpen()" style="margin-left: 10px;">ВЫБРАТЬ ЦВЕТ</button>
+                            </div>
                         <div class="color-selection none" id="selection-color">
                             <div class="element-color-selection">
                                 <div class="element-text">Цвет текста</div>
@@ -60,6 +67,7 @@
                             </div> 
                         </div>
                     </div>
+                    <div id="menu-container"></div>
             </div>
     </body>
 </html>
