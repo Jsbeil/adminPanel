@@ -72,3 +72,11 @@
     height: 30px;
     margin-left: 10px;
 }
+
+
+.image-item{
+    margin-left: 49px;
+    margin-top: 10px;
+
+    border-radius: 5px;
+}
