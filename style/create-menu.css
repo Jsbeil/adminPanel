@@ -17,8 +17,8 @@
 
 .create-popup{
         position: absolute;
-        top: 200px;
-        left: 50%;
+        top: 170px;
+        left: 49%;
         transform: translate(-50%, -50%) scale(0);
         background: #f0f0f0;
         width: 400px;

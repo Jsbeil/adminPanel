@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link rel="stylesheet" type="text/css" href="style/button/button.css">
-        <link rel="stylesheet" type="text/css" href="style/input/input.css">
-        <link rel="stylesheet" type="text/css" href="style/popup/popup.css">
-        <link rel="stylesheet" type="text/css" href="style/button/button-color.css">
-        <link rel="stylesheet" type="text/css" href="style/create-menu.css">
 
-        <script src="style/popup/popup.js"></script>
-        <script src="style/button/button.js"></script>
-        <script scr="script.js"></script>
-        <script src="scripts/menu-creaetion.js"></script>
-        <script src="https://kit.fontawesome.com/3cbd357e36.js" crossorigin="anonymous"></script>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style/button/button.css">
+    <link rel="stylesheet" type="text/css" href="style/input/input.css">
+    <link rel="stylesheet" type="text/css" href="style/popup/popup.css">
+    <link rel="stylesheet" type="text/css" href="style/button/button-color.css">
+    <link rel="stylesheet" type="text/css" href="style/create-menu.css">
+    <link rel="stylesheet" type="text/css" href="style/tusk-menu.css">
 
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Пример веб-страницы</title>
-        
-    </head>
-    <body id="body">
-            <!-- <div class="popup-bg" id="bg-popup">
+    <script src="style/popup/popup.js"></script>
+    <script src="style/button/button.js"></script>
+    <script scr="script.js"></script>
+    <script src="scripts/menu-creaetion.js"></script>
+    <script src="https://kit.fontawesome.com/3cbd357e36.js" crossorigin="anonymous"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Пример веб-страницы</title>
+
+</head>
+
+<body id="body">
+    <div class="popup-bg" id="bg-popup">
                 <div class="popup active" id="popupActive" >
                     <i class="fa-solid fa-x close" id="closeButton" onclick="closePopup()"></i>
                     <div class="popup-info">
-                            Это придложение будет,предоставлять возможность,
-                            Создавать меню сайта. Если вы все прочитали и 
-                            ознакомились с этим, можно нажать на крестик.
+                    Вы начинаете с задачи под номером 7
                     </div>
                 </div>
             </div>
-            <div class="change-color none" id="changeColor"> -->
-                <div class="button-chanhe">
-                    <div class="circle" id="circle" onclick="AddClassCircle()"></div>
+            <div class="change-color none" id="changeColor">
+        
+    </div>
+    <div class="containet-glav">
+        <div class="button-chanhe">
+            <div class="circle" id="circle" onclick="AddClassCircle()"></div>
+        </div>
+        <div class="container-gl active" id="container-gl">
+            <div class="create-menu-button">
+                <div class="create-text">Нажмите на кнопку чтоб создать свое меню</div>
+                <button class="button-style-easy create-button" onclick="openPopupCreate()">Открыть</button>
+            </div>
+            <div class="create-popup " id="createpopup" name="form">
+                <input class="input-style-easy create-input" placeholder="Меню вводить через запятую"
+                    onclick="return false" value="" id="input-field" />
+                <div class="create-buttons">
+                    <i class="fa-solid fa-x close" id="closeButton" onclick="closePopupCreate()"
+                        style="color: gray;"></i>
+                    <button class="button-style-easy create-button-menu"
+                        onclick="createArray(); imgaARAY(); return false;" style="margin-top: 10px;">СОЗДАТЬ</button>
+                    <button class="button-style-easy create-button-menu" onclick="selectionColorOpen()"
+                        style="margin-left: 10px;">ВЫБРАТЬ ЦВЕТ</button>
+                </div>
+                <div class="color-selection none" id="selection-color">
+                    <div class="element-color-selection">
+                        <div class="element-text">Цвет текста</div>
+                        <input class="color-input" type="color" id="head" name="head" value="#ffffff">
+                    </div>
+                    <div class="element-color-selection">
+                        <div class="element-text">Цвет Фона</div>
+                        <input class="color-input" type="color" id="head1" name="head" value="#7ba2ff">
+                    </div>
+                    <div class="element-color-selection">
+                        <div class="element-text">Цвет hover</div>
+                        <input class="color-input" type="color" id="head2" name="head" value="#7ba2ff">
+                    </div>
                 </div>
             </div>
-            <div class="container-gl active" id="container-gl">
-                    <div class="create-menu-button">
-                        <div class="create-text" >Нажмите на кнопку чтоб создать свое меню</div>
-                        <button class="button-style-easy create-button" onclick="openPopupCreate()">Открыть</button>
-                    </div>
-                    <div class="create-popup active"  id="createpopup" name="form">
-                            <input 
-                            class="input-style-easy create-input" 
-                            placeholder="Меню вводить через запятую"
-                            onclick="return false"
-                            value=""
-                            id="input-field"
-                            />
-                            <div class="create-buttons">
-                                <i class="fa-solid fa-x close" id="closeButton" onclick="closePopupCreate()" style="color: gray;"></i>
-                                    <button class="button-style-easy create-button-menu"onclick="createArray(); imgaARAY(); return false;" style="margin-top: 10px;">СОЗДАТЬ</button>
-                                <button class="button-style-easy create-button-menu"onclick="selectionColorOpen()" style="margin-left: 10px;">ВЫБРАТЬ ЦВЕТ</button>
-                            </div>
-                        <div class="color-selection none" id="selection-color">
-                            <div class="element-color-selection">
-                                <div class="element-text">Цвет текста</div>
-                                <input 
-                                class="color-input" 
-                                type="color" 
-                                id="head" 
-                                name="head" 
-                                value="#ffffff">
-                            </div>
-                            <div class="element-color-selection">
-                                <div class="element-text">Цвет Фона</div>
-                                <input 
-                                class="color-input" 
-                                type="color" 
-                                id="head1" 
-                                name="head" 
-                                value="#7ba2ff">
-                            </div>
-                            <div class="element-color-selection">
-                                <div class="element-text">Цвет hover</div>
-                                <input 
-                                class="color-input" 
-                                type="color" 
-                                id="head2" 
-                                name="head" 
-                                value="#7ba2ff">
-                            </div> 
-                        </div>
-                    </div>
-                    <div id="menu-container"></div>
-                    <div id="image-container">
-                        <img id="image" src="" class="image-item">
-                    </div>
+            <div id="menu-container"></div>
+            <div id="image-container">
+                <img id="image" src="" class="image-item">
             </div>
-    </body>
+        </div>
+        <div class="tusk-menu">
+            <div class="tusk-item">
+                <button class="button-style-easy tusk-button">Задача 1</button>
+                <button class="button-style-easy tusk-button">Задача 2</button>
+                <button class="button-style-easy tusk-button">Задача 3</button>
+                <button class="button-style-easy tusk-button">Задача 4</button>
+                <button class="button-style-easy tusk-button">Задача 5</button>
+                <button class="button-style-easy tusk-button">Задача 6</button>
+            </div> 
+        </div>
+    </div>
+
+</body>
+
 </html>

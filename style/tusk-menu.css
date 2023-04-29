@@ -1,0 +1,15 @@
+.tusk-menu{
+    width: 150px;
+    height: 153px;
+}
+.tusk-item{
+    display: flex;
+    flex-flow: column;
+}
+.tusk-button{
+    width: 150px;
+    height: 30px;
+
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
