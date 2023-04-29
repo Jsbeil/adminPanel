@@ -2,11 +2,16 @@
     width: 130px;
     height: 50px;
 }
+.button-circle{
+    width: 83%;
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+}
 .button-chanhe{
+   
     width: 92px;
     height: 40px;
-    
-    margin-right: 20px;
     border-radius: 30px;
     background-color: rgb(252, 252, 252);
     box-shadow: 3px 4px 0px 0px rgb(42, 72, 94); 
