@@ -23,15 +23,40 @@ function tusk2(){
     k = x1 < Math.sqrt(Math.pow(y1,5)) ? 2 * Math.pow(x1,2) - 3 * y1 - 19 * Math.pow(y1,2) : Math.pow(x1,2) - 6 * Math.pow(y1,2) 
 
     alert("третий пример " + k.toFixed(2));
+}
 
+function tusk2_tusk2(){
+    let x =0.8;
+    let y =-3.75;
 
-    let x2 = 0.8 , y2 = -3.75;
+    let a = Math.pow(Math.cos,2)*(4 * x) - 1 + Math.cos(4 * y)/2;
 
-    a1 = Math.pow(Math.cos,2)*(4*x2) - 1 + Math.cos(4*y2)/2;
+    let r = a < Math.sin(Math.pow(y,2)) ? Math.PI/4 - x : Math.tan(x) + Math.tan(Math.PI/4*x);
 
-    r = a1 < Math.sin(Math.pow(y2,2)) ? Math.PI/4 - x2 : Math.tan(x2) + Math.tan(Math.PI/4 * x2);
+    alert(r);
 
-    alert("второй пример" + r);
+    let m = Math.sin(5), n = Math.pow(Math.E,m), k= m + n ;
 
+     let a1 = Math.log(2)**2  + m ;
+     let b = Math.acos(k) / a1;
 
+     let w = a1 < Math.pow(b,3) ? Math.sqrt(a1+1) : Math.sqrt(a1 + 2);
+     alert(w.toFixed(2));
+}
+
+function tusk3(){
+    let style = ["Джас", "Блюз"];
+    style.push("Рок-н-Ролл");
+    console.log(style)
+    style[style.length - 2] = "Классика";
+    console.log(style);
+    style.shift();
+    console.log(style);
+    style.unshift("Рэп","Регги");
+    console.log(style);
+}
+function tusk4(){
+    let style = ["Джас", "Блюз", 2 ,3 ,3 ,5 ,6];
+    console.log(style);
+   console.log(style.lastIndexOf());
 }
