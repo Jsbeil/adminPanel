@@ -1,50 +1,50 @@
-function tusk1(){
+function tusk1() {
     let a = prompt("Введиде значение для a");
     let b = prompt("Введиде значение для b");
     let count = a + b < 4 ? "мало" : "много";
     alert(count);
 }
-function tusk2(){
-    let x = 5 , n=3;
+function tusk2() {
+    let x = 5, n = 3;
 
-    let y = 2 * Math.pow(Math.E,x)+1;
-    let z = Math.log(x)/x;
+    let y = 2 * Math.pow(Math.E, x) + 1;
+    let z = Math.log(x) / x;
 
-    let w = x < Math.pow(z,2) ? x*y : n*x +2 ;
+    let w = x < Math.pow(z, 2) ? x * y : n * x + 2;
 
     alert("первый пример " + w);
 
-    
+
     let a = 7, b = 9
 
-    x1 = Math.sqrt(2.3+Math.pow(a,2))/Math.log10(Math.pow(b,3)) + 8.77;
-    y1 = Math.asin(Math.pow(a,2)/Math.pow(b,3))/x1;
+    x1 = Math.sqrt(2.3 + Math.pow(a, 2)) / Math.log10(Math.pow(b, 3)) + 8.77;
+    y1 = Math.asin(Math.pow(a, 2) / Math.pow(b, 3)) / x1;
 
-    k = x1 < Math.sqrt(Math.pow(y1,5)) ? 2 * Math.pow(x1,2) - 3 * y1 - 19 * Math.pow(y1,2) : Math.pow(x1,2) - 6 * Math.pow(y1,2) 
+    k = x1 < Math.sqrt(Math.pow(y1, 5)) ? 2 * Math.pow(x1, 2) - 3 * y1 - 19 * Math.pow(y1, 2) : Math.pow(x1, 2) - 6 * Math.pow(y1, 2)
 
     alert("третий пример " + k.toFixed(2));
 }
 
-function tusk2_tusk2(){
-    let x =0.8;
-    let y =-3.75;
+function tusk2_tusk2() {
+    let x = 0.8;
+    let y = -3.75;
 
-    let a = Math.pow(Math.cos,2)*(4 * x) - 1 + Math.cos(4 * y)/2;
+    let a = Math.pow(Math.cos, 2) * (4 * x) - 1 + Math.cos(4 * y) / 2;
 
-    let r = a < Math.sin(Math.pow(y,2)) ? Math.PI/4 - x : Math.tan(x) + Math.tan(Math.PI/4*x);
+    let r = a < Math.sin(Math.pow(y, 2)) ? Math.PI / 4 - x : Math.tan(x) + Math.tan(Math.PI / 4 * x);
 
     alert(r);
 
-    let m = Math.sin(5), n = Math.pow(Math.E,m), k= m + n ;
+    let m = Math.sin(5), n = Math.pow(Math.E, m), k = m + n;
 
-     let a1 = Math.log(2)**2  + m ;
-     let b = Math.acos(k) / a1;
+    let a1 = Math.log(2) ** 2 + m;
+    let b = Math.acos(k) / a1;
 
-     let w = a1 < Math.pow(b,3) ? Math.sqrt(a1+1) : Math.sqrt(a1 + 2);
-     alert(w.toFixed(2));
+    let w = a1 < Math.pow(b, 3) ? Math.sqrt(a1 + 1) : Math.sqrt(a1 + 2);
+    alert(w.toFixed(2));
 }
 
-function tusk3(){
+function tusk3() {
     let style = ["Джас", "Блюз"];
     style.push("Рок-н-Ролл");
     console.log(style)
@@ -52,11 +52,44 @@ function tusk3(){
     console.log(style);
     style.shift();
     console.log(style);
-    style.unshift("Рэп","Регги");
+    style.unshift("Рэп", "Регги");
     console.log(style);
 }
-function tusk4(){
-    let style = ["Джас", "Блюз", 2 ,3 ,3 ,5 ,6];
+function tusk4() {
+    let style = ["Джас", "Блюз", 2, 3, 3, 5, 6, 8];
     console.log(style);
-   console.log(style.lastIndexOf());
+    console.log(style[style.length - 1]);
+}
+function tusk5() {
+    let count = 0;
+    let arr = []
+    while (true) {
+        let input = prompt("введите значение");
+        if (input === null || input === "" || isNaN(input)) {
+            break;
+        }
+        arr.push(Number(input));
+    }
+    for (let i = 0; i < arr.length; i++) {
+        count = count + arr[i];
+    }
+    console.log(count);
+}
+
+function tusk6() {
+    const input = prompt("Введите элементы массива через запятую:");
+    const arr = input.split(",").map(Number);
+
+    let max_value = arr[0];
+    let max_index = 0;
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max_value) {
+            max_value = arr[i];
+            max_index = i;
+        }
+    }
+
+    console.log(`Максимальное значение: ${max_value}`);
+    console.log(`Индекс максимального значения: ${max_index}`);
 }
